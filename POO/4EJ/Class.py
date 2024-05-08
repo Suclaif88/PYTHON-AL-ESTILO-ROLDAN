@@ -11,7 +11,6 @@ class CLASE:
                 self.Dicc.append({"Nombre":Nombre,"Precio":Precio})
             else:
                 print("Precio invalido")
-                
             if  Nombre == "susana":
                 Precio = Precio * 1.2
                 self.Dicc.append({"Nombre":Nombre,"Precio":Precio})

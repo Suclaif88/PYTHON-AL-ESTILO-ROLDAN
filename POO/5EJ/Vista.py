@@ -6,6 +6,11 @@ os.system("cls")
 Obj = CLASE()
 
 Obj.IngresoDatos()
-Obj.imp()
-#falta punto 5 d
-#falta punto 5 e
+Obj.ProcesarNotas()
+
+os.system("cls")
+
+Obj.PromediosNotas()
+Obj.ContarNotas()
+Obj.MinMaxNotas()
+# Obj.pr()

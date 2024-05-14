@@ -13,10 +13,12 @@ class CLASE:
                 self.Notas.append(Nota)
             else:
                 self.Notas.append(Nota)
-            if Nota >= 5.0:
-                self.NotasG.append(Nota)
-            else:
-                self.NotasP.append(Nota)
+                
+                #------arreglar---------------
+            # if Nota >= 5.0:
+            #     self.NotasG.append(Nota)
+            # else:
+            #     self.NotasP.append(Nota)
                 
             
             

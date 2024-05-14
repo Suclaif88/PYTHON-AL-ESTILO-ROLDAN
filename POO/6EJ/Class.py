@@ -8,10 +8,10 @@ class CLASE:
         self.Total_Promedio = 0
     
     def Registro(self,N,Cn,Notas):
-    
-            for _ in range(Cn): # se puede definir un ciclo for sin iterador
-                Nt = float(input("Ingrese la nota: "))
-                Notas.append(Nt)
+    #------arreglar---------------
+            # for _ in range(Cn): # se puede definir un ciclo for sin iterador
+            #     Nt = float(input("Ingrese la nota: "))
+            #     Notas.append(Nt)
         
             Promedio = sum(Notas) / len(Notas)
             self.Total_Promedio += Promedio

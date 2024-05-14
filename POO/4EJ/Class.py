@@ -2,7 +2,12 @@ class CLASE:
     def __init__(self):
         self.Dicc = []
         
-    def Registro(self, Nombre, Precio):        
+    def Registro(self):
+        #------arreglar---------------
+        for i in range(1,11):
+            print("----------------------------")
+            Nombre = input(f"Ingrese el nombre {i}: ")
+            Precio = int(input(f"Ingrese el precio {i}: "))
             if Precio >= 1 and Precio <= 1000:
                 self.Dicc.append({"Nombre":Nombre,"Precio":Precio})
             else:
@@ -18,7 +23,7 @@ class CLASE:
                 self.Dicc.append({"Nombre":Nombre,"Precio":Precio})
             else:
                 pass
-            print("----------------------------")
+        print("----------------------------")
             
     def PromedioPrecio(self):
         P = sum(i['Precio'] for i in self.Dicc) / len(self.Dicc)

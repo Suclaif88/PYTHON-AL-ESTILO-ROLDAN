@@ -6,8 +6,8 @@ class CLASE:
         self.Sueldos.append(sueldo)
          
     def Promedio(self):
-        Promedio = sum(self.Sueldos) / len(self.Sueldos)
-        print(f"El promedio es: {Promedio}")
+        self.Promedio = sum(self.Sueldos) / len(self.Sueldos)
+        print(f"El promedio es: {self.Promedio}")
 
     def Mayor(self):
         Mayor = max(self.Sueldos)
@@ -18,14 +18,13 @@ class CLASE:
         print(f"El menor es: {Menor}")
 
     def Estado(self):
-        Promedio = sum(self.Sueldos) / len(self.Sueldos)
-        if Promedio >= 1 and Promedio <= 4000000:
+        if self.Promedio >= 1 and self.Promedio <= 4000000:
             print("Sueldo basico")
-        elif Promedio <= 0:
+        elif self.Promedio <= 0:
             print("Sueldo basico")
-        elif Promedio >= 4000001 and Promedio <= 10000000:
+        elif self.Promedio >= 4000001 and self.Promedio <= 10000000:
             print("Sueldo medio")
-        elif Promedio >= 10000001 and Promedio <= 20000000:
+        elif self.Promedio >= 10000001 and self.Promedio <= 20000000:
             print("Sueldo alto")
         else:
             print("Sueldo alto")

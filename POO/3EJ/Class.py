@@ -1,12 +1,11 @@
 class CLASE:
     def __init__(self):
-        self.Nombre = input("Ingrese el nombre del estudiante: ")
         self.Notas = []
-    def RegistroNotas(self, Nota):
+    def RegistroNotas(self,Nota):
         self.Notas.append(Nota)
             
-    def MostrarRegistro(self):
-        print(f"El nombre del estudiante es: {self.Nombre}")
+    def MostrarRegistro(self,Nombre):
+        print(f"El nombre del estudiante es: {Nombre}")
         print(f"Las notas del estudiante son: {self.Notas}")
 
     def Promedio(self):

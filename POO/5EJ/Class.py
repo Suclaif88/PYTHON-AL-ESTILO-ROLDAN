@@ -20,7 +20,7 @@ class CLASE:
     
     def ProcesarNotas(self):
         for i in self.Notas:
-            if i <= 4.5:
+            if i >= 3.0 and i <= 5.0:
                 self.NotasG.append(i)
             else:
                 self.NotasP.append(i)

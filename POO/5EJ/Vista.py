@@ -5,8 +5,12 @@ os.system("cls")
 
 Obj = CLASE()
 
-Obj.IngresoDatos()
-Obj.ProcesarNotas()
+for i in range(1,3):
+    print("----------------------------")
+    Nota = float(input(f"Ingrese la nota {i}: "))
+    Sexo = input(f"Ingrese el sexo (hombre/mujer): ").lower()
+    Obj.IngresoDatos(Nota,Sexo)
+
 
 os.system("cls")
 

@@ -4,7 +4,10 @@ from Class import CLASE
 os.system("cls")
 
 Obj = CLASE()
-Obj.RegistroNotas()
+
+for i in range(1,7):
+    Nota = int(input(f"Ingrese la nota {i}: "))
+    Obj.RegistroNotas(Nota)
 
 os.system("cls")
 

@@ -2,10 +2,8 @@ class CLASE:
     def __init__(self):
         self.Nombre = input("Ingrese el nombre del estudiante: ")
         self.Notas = []
-    def RegistroNotas(self):
-        for i in range(1,7):
-            Nota = int(input(f"Ingrese la nota {i}: "))
-            self.Notas.append(Nota)
+    def RegistroNotas(self, Nota):
+        self.Notas.append(Nota)
             
     def MostrarRegistro(self):
         print(f"El nombre del estudiante es: {self.Nombre}")

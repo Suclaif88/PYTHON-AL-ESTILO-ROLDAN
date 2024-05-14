@@ -7,12 +7,7 @@ class CLASE:
         self.Reprobados = 0 
         self.Total_Promedio = 0
     
-    def Registro(self):
-        while True:
-            print("--REGISTRO DE ESTUDIANTE--")
-            N = str(input("Ingrese el nombre del estudiante: "))
-            Cn = int(input("Ingrese el número de notas del estudiante: "))
-            Notas = []
+    def Registro(self,N,Cn,Notas):
     
             for _ in range(Cn): # se puede definir un ciclo for sin iterador
                 Nt = float(input("Ingrese la nota: "))
@@ -22,16 +17,6 @@ class CLASE:
             self.Total_Promedio += Promedio
     
             self.Estudiantes[N] = Notas
-    
-            Acc = input("¿DESEA HACER UN NUEVO REGISTRO DE ESTUDIANTE? Y/N: ")
-            if Acc.upper() == "Y":
-                os.system("cls")
-                pass
-            elif Acc.upper() == "N":
-                break
-            else:
-                print("OPCIÓN NO VÁLIDA")
-                break
             
     def DefinirPromedio(self):
         for nombre in self.Estudiantes:

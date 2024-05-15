@@ -12,11 +12,11 @@ class CLASE:
             
     def DefinirPromedio(self):
         for nombre in self.Estudiantes:
-            notas = self.Estudiantes[nombre]
-            Promedio = sum(notas) / len(notas)
-            if Promedio >= 3.0 and Promedio <= 5.0:
+            self.notas = self.Estudiantes[nombre]
+            self.Promedio = sum(self.notas) / len(self.notas)
+            if self.Promedio >= 3.0 and self.Promedio <= 5.0:
                 self.Aprobados += 1
-            elif Promedio >= 1.0 and Promedio <= 2.9:
+            elif self.Promedio >= 1.0 and self.Promedio <= 2.9:
                 self.Reprobados += 1
            
     def MostrarEAprovados(self):
@@ -27,9 +27,8 @@ class CLASE:
     
     def MostrarEConPromedio(self):
         for nombre in self.Estudiantes:
-            notas = self.Estudiantes[nombre]
-            Promedio = sum(notas) / len(notas)
-            print(f"El estudiante {nombre} tiene un promedio: {Promedio}")
+            self.notas = self.Estudiantes[nombre]
+            print(f"El estudiante {nombre} tiene un promedio: {self.Promedio}")
         
     def MostrarPTotal(self):
         print(f"Promedio total de notas: {self.Total_Promedio / len(self.Estudiantes)}")    

@@ -4,7 +4,7 @@ class CLASE:
         self.NotasG = []
         self.NotasP = []
         
-    def IngresoDatos(self,Nota,Sexo):
+    def IngresoDatos(self, Nota, Sexo):
             if Sexo == "mujer":
                 Nota -= 3.0
                 self.Notas.append(Nota)
@@ -14,14 +14,13 @@ class CLASE:
             else:
                 self.Notas.append(Nota)
                 
-                #------arreglar---------------
-            # if Nota >= 5.0:
-            #     self.NotasG.append(Nota)
-            # else:
-            #     self.NotasP.append(Nota)
-                
-            
-            
+    def ProcesarDatos(self):
+        for i in self.Notas:
+            if i >= 5.0:
+                self.NotasG.append(i)
+            else:
+                self.NotasP.append(i)
+                  
     def PromediosNotas(self):
         PG = sum(self.NotasG) / len(self.NotasG)
         PP = sum(self.NotasP) / len(self.NotasP)
@@ -40,8 +39,8 @@ class CLASE:
         print(f"La nota mas baja es: {MINN}")
         print(f"La nota mas alta es: {MAXN}")
           
-    def pr(self):
-        print(f"{self.Notas}")
-        print(f"{self.NotasG}")
-        print(f"{self.NotasP}")
+    # def pr(self):
+    #     print(f"{self.Notas}")
+    #     print(f"{self.NotasG}")
+    #     print(f"{self.NotasP}")
             

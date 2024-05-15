@@ -10,7 +10,8 @@ for i in range(1,3):
     Nota = float(input(f"Ingrese la nota {i}: "))
     Sexo = input(f"Ingrese el sexo (hombre/mujer): ").lower()
     Obj.IngresoDatos(Nota,Sexo)
-
+    
+Obj.ProcesarDatos()
 
 os.system("cls")
 

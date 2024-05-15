@@ -25,6 +25,15 @@ while True:
         break
 
 Obj.DefinirPromedio()
-Obj.Impresion()
+
+os.system("cls")
+
+Obj.MostrarEAprovados()
+Obj.MostrarEReprobados()
+Obj.MostrarEConPromedio()
+Obj.MostrarPTotal()
+Obj.MostrarEConNotas()
+Obj.MostrarDiccionario()
+
 
 #SRD

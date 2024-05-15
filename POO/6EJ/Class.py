@@ -20,22 +20,27 @@ class CLASE:
                 self.Aprobados += 1
             elif Promedio >= 1.0 and Promedio <= 2.9:
                 self.Reprobados += 1
-                
-    def Impresion(self):
-        os.system("cls")
+           
+    def MostrarEAprovados(self):
+        print("Estudiantes que Ganaron:", self.Aprobados)     
+           
+    def MostrarEReprobados(self):
         print("Estudiantes que Perdieron:", self.Reprobados)
-        print("Estudiantes que Ganaron:", self.Aprobados)
-        
+    
+    def MostrarEConPromedio(self):
         for nombre in self.Estudiantes:
             notas = self.Estudiantes[nombre]
             Promedio = sum(notas) / len(notas)
             print(f"El estudiante {nombre} tiene un promedio: {Promedio}")
-    
-        print(f"Promedio total de notas: {self.Total_Promedio / len(self.Estudiantes)}")
- 
+        
+    def MostrarPTotal(self):
+        print(f"Promedio total de notas: {self.Total_Promedio / len(self.Estudiantes)}")    
+        
+    def MostrarEConNotas(self):
         for x,y in self.Estudiantes.items():
             print(f"El estudiante {x} tiene las notas: {y}")
-
+            
+    def MostrarDiccionario(self):
         print(f"El diccionario completo es: {self.Estudiantes}")
-        
+            
 #SRD

@@ -10,7 +10,10 @@ while True:
     N = str(input("Ingrese el nombre del estudiante: "))
     Cn = int(input("Ingrese el número de notas del estudiante: "))
     Notas = []
-    Obj.Registro(N,Cn,Notas)
+    for i in range(Cn):
+        Nt = float(input("Ingrese la nota: "))
+        Notas.append(Nt)
+    Obj.Registro(N,Notas)
     Acc = input("¿DESEA HACER UN NUEVO REGISTRO DE ESTUDIANTE? Y/N: ")
     if Acc.upper() == "Y":
         os.system("cls")
@@ -20,7 +23,6 @@ while True:
     else:
         print("OPCIÓN NO VÁLIDA")
         break
-
 
 Obj.DefinirPromedio()
 Obj.Impresion()

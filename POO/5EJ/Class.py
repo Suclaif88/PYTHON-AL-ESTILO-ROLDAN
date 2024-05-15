@@ -20,25 +20,32 @@ class CLASE:
                 self.NotasG.append(i)
             else:
                 self.NotasP.append(i)
-                  
-    def PromediosNotas(self):
+                
+    def PromedioNGanadas(self):
         PG = sum(self.NotasG) / len(self.NotasG)
-        PP = sum(self.NotasP) / len(self.NotasP)
         print(f"El promedio de notas ganadas es: {PG}")
+                  
+    def PromedioNPerdida(self):
+        PP = sum(self.NotasP) / len(self.NotasP)
         print(f"El promedio de notas perdidas es: {PP}")
         
-    def ContarNotas(self):
+    def ContarNotasG(self):
         NG = len(self.NotasG)
-        NP = len(self.NotasP)
         print(f"El numero de notas aprobadas es: {NG}")
+        
+    def ContarNotasP(self):
+        NP = len(self.NotasP)
         print(f"El numero de notas reprobadas es: {NP}")
     
-    def MinMaxNotas(self):
+    def MinNotas(self):
         MINN = min(self.Notas)
-        MAXN = max(self.Notas)
+        
         print(f"La nota mas baja es: {MINN}")
-        print(f"La nota mas alta es: {MAXN}")
-          
+        
+    def MaxNotas(self):
+        MAXN = max(self.Notas)
+        print(f"La nota mas alta es: {MAXN}")  
+                
     # def pr(self):
     #     print(f"{self.Notas}")
     #     print(f"{self.NotasG}")

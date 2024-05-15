@@ -15,7 +15,13 @@ Obj.ProcesarDatos()
 
 os.system("cls")
 
-Obj.PromediosNotas()
-Obj.ContarNotas()
-Obj.MinMaxNotas()
+Obj.PromedioNGanadas()
+Obj.PromedioNPerdida()
+
+Obj.ContarNotasG()
+Obj.ContarNotasP()
+
+Obj.MinNotas()
+Obj.MaxNotas()
+
 # Obj.pr()

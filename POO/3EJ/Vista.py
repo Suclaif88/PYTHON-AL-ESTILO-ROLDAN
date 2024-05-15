@@ -15,4 +15,4 @@ os.system("cls")
 
 Obj.MostrarRegistro(Nombre)
 Obj.Promedio()
-Obj.Aprobado()
+Obj.Estado()

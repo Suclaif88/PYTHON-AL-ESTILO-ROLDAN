@@ -15,7 +15,7 @@ class CLASE:
         promedio = suma / len(self.Notas)
         print(f"El promedio del estudiante es: {promedio}")
 
-    def Aprobado(self):
+    def Estado(self):
         suma = 0
         for i in self.Notas:
             suma += i

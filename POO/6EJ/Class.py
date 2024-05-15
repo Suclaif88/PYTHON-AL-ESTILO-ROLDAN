@@ -1,5 +1,3 @@
-import os
-
 class CLASE:
     def __init__(self):
         self.Estudiantes = {}

@@ -14,6 +14,7 @@ while True:
         Nt = float(input("Ingrese la nota: "))
         Notas.append(Nt)
     Obj.Registro(N,Notas)
+    Obj.Sumatotalpromedio(Notas)
     Acc = input("¿DESEA HACER UN NUEVO REGISTRO DE ESTUDIANTE? Y/N: ")
     if Acc.upper() == "Y":
         os.system("cls")
@@ -28,7 +29,7 @@ Obj.DefinirPromedio()
 
 os.system("cls")
 
-Obj.MostrarEAprovados()
+Obj.MostrarEAprobados()
 Obj.MostrarEReprobados()
 Obj.MostrarEConPromedio()
 Obj.MostrarPTotal()

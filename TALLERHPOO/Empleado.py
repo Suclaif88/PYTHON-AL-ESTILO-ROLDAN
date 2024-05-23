@@ -10,3 +10,11 @@ class Empleado(Asesor):
     def Imprimir(self):
         print(f"El nombre es: {self.nombre} El celular es: {self.celular}")
         Asesor.Imprimir2(self)
+        
+    def Rol(self,Acc):
+        if Acc == 1:
+            print("ASESOR")
+            self.Imprimir2()
+        elif Acc == 2:
+            print("EMPLEADO")
+            self.Imprimir()  

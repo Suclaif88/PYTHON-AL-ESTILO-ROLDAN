@@ -3,25 +3,25 @@ from Empleado import Empleado
 
 os.system("cls")
 
-nombre = input("INGRESE SU NOMBRE: ")
-apellido = input("INGRESE SU APELLIDO: ")
-celular = input("INGRESE SU CELULAR: ")
-tel = input("INGRESE SU TELEFONO: ")
-correo = input("INGRESE SU CORREO: ")
-direccion = input("INGRESE SU DIRECCION: ")
+Acc = int(input("SELECCIONE ROL 1.ASESOR / 2.EMPLEADO: "))
+
+if Acc in [1,2]:
+    apellido = input("INGRESE SU APELLIDO: ")
+    tel = input("INGRESE SU TELEFONO: ")
+    correo = input("INGRESE SU CORREO: ")
+    direccion = input("INGRESE SU DIRECCION: ")
+    if Acc == 2:
+        nombre = input("INGRESE SU NOMBRE: ")
+        celular = input("INGRESE SU CELULAR: ")
+    else:
+        nombre = None
+        celular = None
+else:
+    print("ROL INCORRECTO")    
 
 os.system("cls")
 
 Obj = Empleado(nombre,apellido,celular,tel,correo,direccion)
 
-Acc = int(input("SELECCIONE ROL 1.ASESOR / 2.EMPLEADO: "))
-
-if Acc == 1:
-    print("ASESOR")
-    Obj.Imprimir2()
-elif Acc == 2:
-    print("EMPLEADO")
-    Obj.Imprimir()
-else:
-    print("ERROR")
+Obj.Rol(Acc)
 

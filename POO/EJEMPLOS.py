@@ -148,3 +148,65 @@ def cuadrado(x):
 numeros = [1, 2, 3, 4, 5]
 resultado = list(map(cuadrado, numeros))
 print(resultado)  # Output: [1, 4, 9, 16, 25]
+
+
+suma = lambda x,y : x + y #Una funcion anonima / argumentos : expresion 
+
+print(suma(5,5))
+
+
+iterador = iter([1, 2, 3])
+while True:
+    try:
+        print(next(iterador))
+    except StopIteration: #exepcion con stopiteracion cuando no hay mas elementos
+        print("No hay más elementos.")
+        break
+    
+numeros = [1, 2, 3]
+iterador = iter(numeros)
+
+while True:
+    try:
+        numero = next(iterador)
+        print(numero)
+    except StopIteration:
+        break
+    
+    
+
+x = 5
+#exepcion cuando la division es por 0
+y = 0
+    
+try:
+    
+    z = x / y
+    print(z) 
+    
+
+except ZeroDivisionError:
+    print("eso no se puede dividir")
+    
+    
+lista = [1, 2, 3, 4, 5]
+for elemento in reversed(lista):
+    print(elemento)
+#invertir cosas con reversed
+
+
+
+mi_diccionario = {}  # Crear un diccionario vacío
+
+# Insertar elementos utilizando la sintaxis de indexación
+
+HOLA = 'CLAVE1'
+
+notas = [5,3,2,2] 
+
+
+mi_diccionario[HOLA] = notas
+mi_diccionario['clave2'] = 'valor2'
+mi_diccionario['clave3'] = 'valor3'
+
+print(mi_diccionario) 

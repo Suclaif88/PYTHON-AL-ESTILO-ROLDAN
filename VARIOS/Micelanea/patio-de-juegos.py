@@ -79,3 +79,15 @@ letras = ['a', 'b', 'c']
 # Método enumerate() para obtener índices y valores al iterar sobre una lista
 for indice, valor in enumerate(letras):
     print(f"Índice: {indice}, Valor: {valor}")
+    
+def hola(x,y):
+    return x + y
+
+print(hola(5,5))
+
+
+try:
+    print ("hola"+'mundo')
+    
+except SyntaxError:
+    print("ERROR DE SINTAX")

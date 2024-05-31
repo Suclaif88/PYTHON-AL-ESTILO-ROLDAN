@@ -1,0 +1,20 @@
+python manage.py runserver //correr el servidor de django
+
+django-admin startproject nombre_proyecto //empezar un proyecto con django
+
+pip install --upgrade pip setuptools wheel
+
+pip install django
+
+pip show django
+
+
+
+
+deactivate //desactivar entornovirtual
+
+python -m venv nombre_entorno // emepezar un entorno virtual 
+
+.\nombre_entorno\Scripts\Activate //activar el entorno virtual
+
+Remove-Item -Recurse -Force nombre_entorno //eliminar entorno vitual

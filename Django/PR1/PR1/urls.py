@@ -20,5 +20,5 @@ from PR1.views import Saludo
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('Guama/', Saludo),
+    path('Atun/', Saludo),
 ]
